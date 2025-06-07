@@ -37,4 +37,10 @@ for text in texts:
         count+=1
     elif text.upper()=='D':
         count+=1
-print('total',count)
+print('total',count)    
+texts=input('enter your text')
+result=''
+for i in range(len(texts)):
+    if texts[i].lower()=='c':
+        result+=str(i) +'-'
+print(result[:-1])
