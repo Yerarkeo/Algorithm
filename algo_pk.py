@@ -22,4 +22,19 @@ for text in texts:
     if text=='b':
         count+=1
 print('A and a:',counter,'b:',count)
-
+texts='AaBabaCcDdafe'
+counter=0
+for text in texts:
+    if text.lower()=='b' or text.lower()=='c' or text.lower()=='d':
+        counter+=1
+print('total:',counter)
+texts='AaBabaCcDdafe'
+count=0
+for text in texts:
+    if text.upper()=='B':
+        count+=1
+    elif text.upper()=='C':
+        count+=1
+    elif text.upper()=='D':
+        count+=1
+print('total',count)
